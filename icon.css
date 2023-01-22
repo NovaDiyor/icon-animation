@@ -1,0 +1,106 @@
+.button .btn,
+.button .btn:before,
+.button .btn .fa {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.button .btn:before {
+    top: 90%;
+    left: -110%;
+}
+
+.button .btn .fa {
+    transform: scale(0.8);
+}
+
+.button .btn.facebook:before {
+    background-color: #3b5998;
+}
+
+.button .btn.facebook .fa {
+    color: #3b5998;
+}
+
+.button .btn.twitter:before {
+    background-color: #3cf;
+}
+
+.button .btn.twitter .fa {
+    color: #3cf;
+}
+
+.button .btn.github:before {
+    background-color: #171515;
+}
+
+.button .btn.github .fa {
+    color: #171515;
+}
+
+.button .btn.youtube:before {
+    background-color: #dc4a38;
+}
+
+.button .btn.youtube .fa {
+    color: #dc4a38;
+}
+
+.button .btn.telegram:before {
+    background-color: #2E66C0FF;
+}
+
+.button .btn.telegram .fa {
+    color: #2E66C0FF;
+}
+
+.button .btn:focus:before,
+.button .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.button .btn:focus .fa,
+.button .btn:hover .fa {
+    color: #fff;
+    transform: scale(1);
+}
+
+.button {
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.button .btn {
+    display: inline-block;
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+    opacity: 0.99;
+}
+
+.button .btn:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.button .btn .fa {
+    font-size: 38px;
+    vertical-align: middle;
+}
